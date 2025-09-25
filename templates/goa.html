@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Goa</title>
+<style>
+    .article-container {
+        max-width: 800px;
+        margin-left: 10%; /* Adjust as needed */
+        margin-right: auto;
+        padding: 20px;
+    }
+    body {
+        margin: 0;
+        padding-top: 100px; /* Adjust this to match your navbar height */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #ffffff;
+        color: black;
+    }
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255); /* light overlay */
+        z-index: -1;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 60px;
+        color: #000000;
+        padding: 20px;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 0;
+        transition: none;
+        animation: none;
+        opacity:100;
+    }
+
+    p {
+        text-align: left;
+        font-size: 20px;
+        margin: 10px auto 30px;
+        color: #000000;
+        width: 100%;
+    }
+
+    ul {
+        max-width: 700px;
+        margin: auto;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    ul li {
+        margin: 0px ;
+    }
+
+    .article-img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+
+    .link-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #7e7e7e;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        margin: 30px auto 50px;
+        display: block;
+        width: fit-content;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .link-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<div class="overlay"></div>
+<div class="article-container">
+    <h1>Goa, India</h1>
+    <p>Goa is one of India's most popular tourist destinations, known for its vibrant beaches and nightlife.</p>
+    <p>The smallest state in India by area, it is a vibrant coastal gem located on the western shore of the Indian subcontinent. Bordered by Maharashtra to the north and Karnataka to the south and east, and facing the Arabian Sea to the west, Goa is renowned for its golden beaches, rich culture, and thriving tourism industry.</p>
+
+    <img src="https://im.whatshot.in/img/2020/Oct/istock-1157048446-1602065185.jpg" alt="Baga Beach" class="article-img">
+
+    <p>What sets Goa apart from other Indian states is its unique blend of Indian and Portuguese cultures. A former Portuguese colony for over 450 years, Goa was annexed by India in 1961. This long colonial history is still evident today in its architecture, cuisine, language, and religious practices. You’ll find baroque churches, colorful Portuguese villas, and narrow winding streets in places like Old Goa and Fontainhas in Panaji, the capital.
+
+    </p>
+
+    <p>Goa's beaches are world-famous. From the party vibes of Baga and Anjuna to the laid-back serenity of Palolem and Agonda, each beach has its own flavor. Water sports, beach shacks, night markets, and sunset views attract millions of tourists every year, both domestic and international.</p>
+    <p>Goa experiences a tropical monsoon climate, which means the state goes through three distinct seasons: summer, monsoon, and winter. Thanks to its position along the Arabian Sea and proximity to the equator, temperatures in Goa remain fairly warm throughout the year. Average daytime highs typically range from 28°C to 34°C (82°F to 93°F), making it an inviting destination for sun-seekers year-round.</p>
+    <p>However, it’s not just the temperature that defines Goa’s weather—the humidity levels are often high, especially along the coast and during the monsoon season. The moisture-laden air gives the landscape a lush, tropical feel but can make the heat feel more intense, particularly in the summer months. Still, the consistent warmth supports the region’s vibrant biodiversity and year-round greenery, and the sea breeze offers occasional relief from the heat.
+    </p>
+
+    <img src="https://www.agoda.com/wp-content/uploads/2024/07/Featured-image-Palolem-beach-Goa-India.jpg" alt="Dudhsagar Waterfalls" class="article-img">
+    <p>These weather patterns shape not just the natural environment, but also the rhythm of life in Goa—from when farmers plant their crops to when tourists flood the beaches. Each season brings a unique atmosphere to the state, influencing festivals, cuisine, and outdoor activities. Whether it's the sun-drenched coastlines of winter, the lush monsoon countryside, or the bright, lazy days of summer, Goa’s climate plays a central role in defining its charm and character.</p>
+    <p>Goa is not just a destination; it's an experience. With its perfect mix of tradition and modernity, peace and party, it continues to be one of India’s most beloved travel spots.</p>
+</div>
+    <a href="{{ url_for('Articles')}}" class="link-btn">Back to Articles</a>
+
+{% endblock %}
